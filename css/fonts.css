@@ -5,20 +5,20 @@ MARK: Heading
 /*#region*/
 /* Big Headings, huge focus: Sekuya*/
 @font-face {
-    font-family: 'Sekuya';
-    src: url("../fonts/Sekuya/Sekuya-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Sekuya";
+  src: url("../fonts/Sekuya/Sekuya-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Sub Headings, big but not as big focus: New Rocker*/
 @font-face {
-    font-family: 'New_Rocker';
-    src: url("../fonts/New_Rocker/NewRocker-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "New_Rocker";
+  src: url("../fonts/New_Rocker/NewRocker-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 /*#endregion*/
 
@@ -32,44 +32,41 @@ MARK: Text
 /*#region*/
 /* Main Font 1: Huninn, Normal Weight */
 @font-face {
-    font-family: 'Main-Font';
-    src: url("../fonts/Huninn/Huninn-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    size-adjust: 100%;
-    descent-override: 80%;
+  font-family: "Main-Font";
+  src: url("../fonts/Huninn/Huninn-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 100%;
 }
 
 /* Main Font 2: Fredoka, Lighter Weight */
 @font-face {
-    font-family: 'Main-Font';
-    src: url("../fonts/Fredoka/Fredoka-Light.ttf");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-    size-adjust: 108%;
-    descent-override: 65%;
+  font-family: "Main-Font";
+  src: url("../fonts/Fredoka/Fredoka-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 108%;
 }
 
 /* Main Font 3?: Kodchasan, Light Weight
 */
 @font-face {
-    font-family: 'Kodchasan';
-    src: url("../fonts/Kodchasan/Kodchasan-Light.ttf");
-    font-weight: lighter;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Kodchasan";
+  src: url("../fonts/Kodchasan/Kodchasan-Light.ttf");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Kodchasan';
-    src: url("../fonts/Kodchasan/Kodchasan-Italic.ttf");
-    font-weight: lighter;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Kodchasan";
+  src: url("../fonts/Kodchasan/Kodchasan-Italic.ttf");
+  font-weight: lighter;
+  font-style: italic;
+  font-display: swap;
 }
-
 
 /*#endregion*/
 
@@ -84,44 +81,44 @@ MARK: Accents
 
 /* Quotes and I guess accents in a way?: Chakra Petch*/
 @font-face {
-    font-family: 'Chakra_Petch';
-    src: url("../fonts/Chakra_Petch/ChakraPetch-Light.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Chakra_Petch";
+  src: url("../fonts/Chakra_Petch/ChakraPetch-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Chakra_Petch';
-    src: url("../fonts/Chakra_Petch/ChakraPetch-LightItalic.ttf");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Chakra_Petch";
+  src: url("../fonts/Chakra_Petch/ChakraPetch-LightItalic.ttf");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* Accent Font, was just cool: Barcode */
 @font-face {
-    font-family: 'Libre_Barcode_128';
-    src: url("../fonts/Libre_Barcode_128/LibreBarcode128-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Libre_Barcode_128";
+  src: url("../fonts/Libre_Barcode_128/LibreBarcode128-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Code Block fonts: Cascadia Code */
 @font-face {
-    font-family: 'Cascadia_Code';
-    src: url("../fonts/Cascadia_Code/CascadiaCode-Light.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cascadia_Code";
+  src: url("../fonts/Cascadia_Code/CascadiaCode-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cascadia_Code';
-    src: url("../fonts/Cascadia_Code/CascadiaCode-LightItalic.ttf");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Cascadia_Code";
+  src: url("../fonts/Cascadia_Code/CascadiaCode-LightItalic.ttf");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 /*#endregion*/
