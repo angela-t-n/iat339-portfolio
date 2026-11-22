@@ -376,6 +376,7 @@ ul li::marker {
 */
 .star-button::before {
   content: "⟡";
+  font-family: monospace;
   font-size: 1.3rem;
   width: 17px;
 
@@ -383,7 +384,7 @@ ul li::marker {
   /* text-box-trim: trim-both;
   text-box-edge: cap alphabetic; */
   line-height: 0.1rem;
-  padding: 0.45rem 0;
+  padding: 0.3rem 0 0.1rem 0;
 }
 
 .star-button:hover::before,
