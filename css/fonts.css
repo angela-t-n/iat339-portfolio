@@ -5,7 +5,7 @@ MARK: Heading
 /*#region*/
 /* Big Headings, huge focus: Sekuya*/
 @font-face {
-  font-family: "Heading-Font-1";
+  font-family: "Host_Grotesk";
   src: url("../fonts/Host_Grotesk/HostGrotesk-Bold.ttf");
   font-weight: 400;
   font-style: normal;
@@ -13,7 +13,7 @@ MARK: Heading
 }
 
 @font-face {
-  font-family: "Heading-Font-1";
+  font-family: "Host_Grotesk";
   src: url("../fonts/Host_Grotesk/HostGrotesk-Medium.ttf");
   font-weight: 300;
   font-style: normal;
@@ -22,7 +22,7 @@ MARK: Heading
 
 /* Sub Headings, big but not as big focus: New Rocker*/
 @font-face {
-  font-family: "Heading-Font-2";
+  font-family: "Chakra_Petch";
   src: url("../fonts/Chakra_Petch/ChakraPetch-Medium.ttf");
   font-weight: 400;
   font-style: normal;
@@ -39,7 +39,7 @@ MARK: Text
 */
 /*#region*/
 @font-face {
-  font-family: "Main-Font";
+  font-family: "Huninn";
   src: url("../fonts/Huninn/Huninn-Regular.ttf");
   font-weight: 400;
   font-style: normal;
@@ -48,7 +48,7 @@ MARK: Text
 }
 
 @font-face {
-  font-family: "Sub-Font";
+  font-family: "Kodchasan";
   src: url("../fonts/Kodchasan/Kodchasan-Medium.ttf");
   font-weight: 400;
   font-style: normal;
@@ -57,9 +57,18 @@ MARK: Text
 }
 
 @font-face {
-  font-family: "Sub-Font";
-  src: url("../fonts/Fredoka/Fredoka-Light.ttf");
+  font-family: "Kodchasan";
+  src: url("../fonts/Kodchasan/Kodchasan-Regular.ttf");
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 100%;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url("../fonts/Fredoka/Fredoka-Light.ttf");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
   size-adjust: 108%;
@@ -87,7 +96,7 @@ MARK: Accents
 
 /* Accent Font, was just cool */
 @font-face {
-  font-family: "Accent-Font";
+  font-family: "Michroma";
   src: url("../fonts/Michroma/Michroma-Regular.ttf");
   font-weight: 400;
   font-style: normal;

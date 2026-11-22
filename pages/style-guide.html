@@ -45,19 +45,35 @@
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements" headingoffset="1">
       <h1 class="trim-override">❖ Interactive Elements ❖</h1>
-      <p class="accent-font subtitle-accent">
+      <p class="Michroma subtitle-accent">
         ✦❯❯❯ Elements that react to the user's cursor
       </p>
 
       <!-- Default Button styling section -->
       <section>
-        <h2>🟄 Navigation Button ✦🟄-</h2>
+        <h2 id="nav-button">🟄 Navigation Button ✦🟄-</h2>
 
-        <a class="button" href="#">Default Button</a>
+        <a class="base-button star-button" href="#nav-button">Default Button</a>
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
           <p>.style-guide-button-nav</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        </div>
+      </section>
+
+      <section>
+        <h2>🟄 Normal link ✦🟄-</h2>
+
+        <a href="https://www.lipsum.com/feed/html"
+          >I'm just a normal link :)
+        </a>
+
+        <div class="showcase-section">
+          <h3>× CSS selector:</h3>
+          <p>a</p>
 
           <h3>Sample code:</h3>
           <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
@@ -72,8 +88,8 @@
           consectetur adipiscing elit. Proin eu est sed neque semper cursus.
           Maecenas porttitor velit at lorem finibus ultricies. Cras vel enim
           nisi. Aliquam quis augue sit amet mauris elementum vestibulum. Donec
-          <a href="https://www.lipsum.com/feed/html"
-            >Over here! I'm an in-link!
+          <a class="in-text-link" href="https://www.lipsum.com/feed/html"
+            >Over here! I'm an in-text link!
           </a>
           lacinia erat pretium fringilla blandit. Donec fermentum elit eget enim
           bibendum gravida. In hac habitasse platea dictumst.
@@ -81,7 +97,7 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>.style-guide-button-nav</p>
+          <p>p, a, .in-text-link</p>
 
           <h3>Sample code:</h3>
           <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
@@ -91,13 +107,110 @@
       <section>
         <h2 id="button-demo">🟄 Other Button Types ✦🟄-</h2>
 
-        <form>
-          <button type="button">Icon</button>
-          <button type="button">Icon & Text</button>
+        <div class="flex-column">
+          <div class="flex-row gap-24">
+            <div>
+              <h3>Button Tag</h3>
+              <button class="base-button star-button" type="button"></button>
+              <button class="base-button star-button" type="button">
+                Icon & Text
+              </button>
+              <button class="base-button" type="button">Text Only</button>
+            </div>
 
-          <a href="#button-demo">Link Icon Button</a>
-          <a href="#button-demo">Link Icon & Text Button</a>
-        </form>
+            <div>
+              <h3>Link Tag</h3>
+              <a class="base-button star-button" href="#button-demo"></a>
+              <a class="base-button star-button" href="#button-demo"
+                >Icon & Text</a
+              >
+              <a class="base-button" href="#button-demo">Text Only</a>
+            </div>
+          </div>
+
+          <div class="flex-row gap-24">
+            <div>
+              <h3>Border Only</h3>
+              <a
+                class="base-button border-button star-button"
+                href="#button-demo"
+              ></a>
+              <a
+                class="base-button border-button star-button"
+                href="#button-demo"
+                >Icon & Text</a
+              >
+              <a class="base-button border-button" href="#button-demo"
+                >Text Only</a
+              >
+            </div>
+
+            <div>
+              <h3>No Initial Border</h3>
+              <a
+                class="base-button border-button nib-button star-button"
+                href="#button-demo"
+              ></a>
+              <a
+                class="base-button border-button nib-button star-button"
+                href="#button-demo"
+                >Icon & Text</a
+              >
+              <a
+                class="base-button border-button nib-button"
+                href="#button-demo"
+                >Text Only</a
+              >
+            </div>
+          </div>
+
+          <div class="flex-row gap-24">
+            <div>
+              <h3>Header Font Button</h3>
+              <button
+                class="host-grotesk-button base-button star-button"
+                type="button"
+              ></button>
+              <button
+                class="host-grotesk-button base-button star-button"
+                type="button"
+              >
+                Icon & Text
+              </button>
+              <button class="host-grotesk-button base-button" type="button">
+                Text Only
+              </button>
+            </div>
+
+            <div>
+              <h3>Accent Font Button</h3>
+              <a
+                class="michroma-button base-button star-button"
+                href="#button-demo"
+              ></a>
+              <a
+                class="michroma-button base-button star-button"
+                href="#button-demo"
+                >Icon & Text</a
+              >
+              <a class="michroma-button base-button" href="#button-demo"
+                >Text Only</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <h3>Less Border Radius</h3>
+            <a class="lbr-button base-button star-button" href="#button-demo"
+              >Icon & Text</a
+            >
+            <a
+              class="lbr-button base-button border-button star-button"
+              href="#button-demo"
+              >Icon & Text</a
+            >
+          </div>
+        </div>
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
@@ -151,7 +264,7 @@
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements" headingoffset="1">
       <h1 class="trim-override">❖ Text Elements ❖</h1>
-      <p class="accent-font subtitle-accent">
+      <p class="Michroma subtitle-accent">
         ✦❯❯❯ Displays text content with pretty fonts
       </p>
 
@@ -165,7 +278,7 @@
           <h4>Heading 4 - Accent almost, but sub title still</h4>
           <h5>Heading 5 - fancier "text" above text blocks</h5>
 
-          <p class="accent-font subtitle-accent">
+          <p class="Michroma subtitle-accent">
             Accent ❯❯❯ Can be used to accent under headings
           </p>
         </div>
@@ -199,7 +312,7 @@
         </p>
         <p class="barcode">The Barcode Font Was Cool</p>
 
-        <p class="accent-font">Whoa what a cool font!</p>
+        <p class="Michroma">Whoa what a cool font!</p>
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
@@ -254,7 +367,7 @@
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements" headingoffset="1">
       <h1 class="trim-override">❖ Combined Elements ❖</h1>
-      <p class="accent-font subtitle-accent">
+      <p class="Michroma subtitle-accent">
         ✦❯❯❯ Puts together smaller elements into larger ones
       </p>
 
@@ -323,7 +436,7 @@
     <!-- FORMS SECTION // -->
     <section id="form_elements" headingoffset="1">
       <h1 class="trim-override">❖ Forms Elements If Needed... ❖</h1>
-      <p class="accent-font subtitle-accent">
+      <p class="Michroma subtitle-accent">
         ✦❯❯❯ Input-related elements, though I don't think I quite need a contact
         form
       </p>

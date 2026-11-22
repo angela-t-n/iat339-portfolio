@@ -14,6 +14,7 @@
   /* 
   ===== Shades =====
   */
+  --an-transparent: #ffffff00;
   --an-white-100: #e7dede;
   --an-white-200: #f5f5f5;
   --an-white-300: #fdfdfd;
@@ -58,21 +59,21 @@
   --an-red-650: #954040;
 
   --an-red-700: #b36565;
-  --an-red-800: #e08d8a;
+  --an-red-800: #d4a2a1;
   --an-red-900: #f3dddc;
 
   /* 
   ===== Magentas =====
   */
   --an-magenta-100: #440d3b;
-  --an-magenta-200: #602646;
+  --an-magenta-200: #60264a;
   --an-magenta-300: #794775;
 
-  --an-magenta-500: #714661;
-  --an-magenta-550: #8f5f79;
+  --an-magenta-500: #71466d;
+  --an-magenta-550: #8f5f83;
 
   --an-magenta-600: #8a6b87;
-  --an-magenta-700: #b487af;
+  --an-magenta-700: #b387b4;
   --an-magenta-800: #c5a2c5;
   --an-magenta-900: #f1e4f1;
 

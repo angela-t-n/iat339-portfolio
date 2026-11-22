@@ -1,15 +1,24 @@
 @import url("./colours.css");
 @import url("./fonts.css");
 @import url("./components/nav-and-footer.css");
+@import url("./guides.css");
 
+/*MARK: Basic Overrides*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  /* replace the browser dependant one*/
+  outline: 2px dashed var(--an-magenta-500);
+  outline-offset: 0.1rem;
+  border-radius: 4px;
+}
+
 body {
-  font-family: "Main-Font", sans-serif;
+  font-family: "Huninn", sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: var(--an-white-400);
@@ -31,6 +40,7 @@ code {
 }
 
 /*MARK: Text*/
+/*#region*/
 h1,
 h2,
 h3,
@@ -44,9 +54,9 @@ label {
   font-size: 1rem;
 }
 
-/*MARK: headings*/
+/*MARK: >headings*/
 h1 {
-  font-family: "Heading-Font-1", sans-serif;
+  font-family: "Host_Grotesk", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
@@ -55,7 +65,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Heading-Font-1", sans-serif;
+  font-family: "Host_Grotesk", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 2.2rem;
@@ -64,7 +74,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Heading-Font-2", sans-serif;
+  font-family: "Chakra_Petch", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
@@ -73,37 +83,37 @@ h3 {
 }
 
 h4 {
-  font-family: "Heading-Font-2", sans-serif;
+  font-family: "Chakra_Petch", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
 }
 
 h5 {
-  font-family: "Heading-Font-2", sans-serif;
+  font-family: "Chakra_Petch", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
   color: var(--an-black-200);
 }
 
-/*MARK: paragraphs*/
+/*MARK: >paragraphs*/
 p,
 label {
   /* pretty much just the default font */
-  font-family: "Main-Font", sans-serif;
+  font-family: "Huninn", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 .quote {
-  font-family: "Sub-Font", sans-serif;
+  font-family: "Kodchasan", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 .caption {
-  font-family: "Sub-Font", sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-style: normal;
   font-weight: 300;
 }
@@ -119,21 +129,41 @@ label {
   text-box-edge: cap alphabetic;
 }
 
-.accent-font {
-  font-family: "Accent-Font", sans-serif;
+.Michroma {
+  font-family: "Michroma", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+/*#endregion*/
 
 /*MARK: Links*/
+/*#region*/
 a {
+  color: var(--an-purple-500);
+  text-decoration: none;
+
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-a:hover {
+a:hover,
+a:focus {
+  color: var(--an-magenta-550);
+  text-decoration: underline dashed 2px;
+}
+
+a:active {
+  color: var(--an-red-550);
+  text-decoration: underline 2px;
+}
+
+.in-text-link {
+  font-style: italic;
 }
 
 /*
-  MARK: Img Link
+  MARK: >img links
   referencing off my own work from P01/02
 */
 /*#region*/
@@ -187,6 +217,7 @@ a:hover {
   transform: scale(0.95);
 }
 /*#endregion*/
+/*#endregion*/
 
 /*MARK: Lists*/
 ol,
@@ -194,13 +225,131 @@ ul {
   margin: 0;
 }
 
-/*MARK: Buttons*/
-.button {
+/*MARK: Buttons
+  there's... a lot oops
+*/
+/*#region*/
+
+/* 
+  MARK: > base button! 
+*/
+.base-button {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 18px;
+  max-width: fit-content;
+  min-height: 60px;
+
+  border: none;
+  border-radius: 10rem;
+
+  font-family: "Kodchasan", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+
+  background-color: var(--an-purple-700);
+  color: var(--an-white-fff);
 }
 
-.button:hover,
-.button:focus {
+.base-button:hover,
+.base-button:focus-visible,
+.base-button:focus {
+  background-color: var(--an-magenta-800);
+  color: var(--an-purple-100);
+  text-decoration: none;
 }
+
+.base-button:active {
+  background-color: var(--an-red-700);
+  color: var(--an-white-fff);
+  text-decoration: none;
+}
+
+/*
+  MARK: > border only button
+*/
+.border-button {
+  box-sizing: border-box;
+  border: 1.5px solid var(--an-purple-200);
+  color: var(--an-purple-200);
+
+  background-color: unset;
+}
+
+.border-button:hover,
+.border-button:focus-visible,
+.border-button:focus {
+  box-sizing: border-box;
+  border-color: var(--an-magenta-500);
+  /* inset to thicken the border, but not the overall size */
+  box-shadow: inset 0 0 0 0.7px var(--an-magenta-500);
+  color: var(--an-magenta-200);
+  text-decoration: none;
+
+  /* 
+    learned that i can mix the colours https://www.w3schools.com/cssref/func_color-mix.php 
+    to make it semi-transparent without modifying the original whoa
+  */
+  background-color: color-mix(in srgb, var(--an-magenta-500) 8%, transparent);
+}
+
+.border-button:active {
+  border-color: var(--an-red-500);
+  box-shadow: inset 0 0 0 0.5px var(--an-red-500);
+  color: var(--an-black-000);
+  text-decoration: none;
+
+  background-color: color-mix(in srgb, var(--an-red-500) 10%, transparent);
+}
+
+/* 
+  MARK: > lbr stands for less border radius 
+*/
+.lbr-button,
+.lbr-button:hover,
+.lbr-button:focus-visible,
+.lbr-button:focus,
+.lbr-button:active {
+  border-radius: 12px;
+}
+
+/* 
+  MARK: > nib stands for no initial border 
+*/
+.nib-button {
+  /* 
+    hacky way of doing this to maintain border sizing 
+    not sure why transparent didn't work when it worked in the 
+    colour mix, prolly because it was an attribute.
+  */
+  border-color: var(--an-transparent);
+}
+
+/* 
+  MARK: > star decoration infront of the text 
+*/
+.star-button::before {
+  content: "⟡";
+  font-size: 1.3rem;
+  width: 17px;
+
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.star-button:hover::before,
+.star-button:focus-visible::before,
+.star-button:focus::before {
+  content: "✦";
+}
+/*#endregion - buttons*/
 
 /*MARK: Forms but I don't think I need these:*/
 /*MARK: Text Inputs*/

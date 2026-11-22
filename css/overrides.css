@@ -7,3 +7,18 @@
   font-size: 1.15rem;
   color: var(--an-purple-200);
 }
+
+/* alternative font for buttons? */
+.host-grotesk-button {
+  font-family: "Host_Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.michroma-button {
+  font-family: "Michroma", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+}
