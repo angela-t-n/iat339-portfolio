@@ -2,3 +2,8 @@
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 }
+
+.subtitle-accent {
+  font-size: 1.15rem;
+  color: var(--an-purple-200);
+}

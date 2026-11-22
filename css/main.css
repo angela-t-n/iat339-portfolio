@@ -12,11 +12,12 @@ body {
   font-family: "Main-Font", sans-serif;
   font-style: normal;
   font-weight: 400;
+  background-color: var(--an-white-400);
 }
 
 code {
-  background-color: #ded5e98c;
-  color: #000000;
+  background-color: var(--an-purple-850);
+  color: var(--an-black-000);
   padding: 0.5em 0.75em;
   display: block;
 
@@ -29,9 +30,6 @@ code {
   word-wrap: break-word;
 }
 
-summary {
-}
-
 /*MARK: Text*/
 h1,
 h2,
@@ -39,19 +37,92 @@ h3,
 h4,
 h5,
 h6,
-p {
-  margin: 0;
-  line-height: 1.5;
-}
-
 p,
 label {
+  margin: 0.5rem 0 0.5rem 0;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
-caption {
+/*MARK: headings*/
+h1 {
+  font-family: "Heading-Font-1", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+
+  color: var(--an-purple-100);
 }
 
-.definition {
+h2 {
+  font-family: "Heading-Font-1", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+
+  color: var(--an-magenta-100);
+}
+
+h3 {
+  font-family: "Heading-Font-2", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  color: var(--an-red-100);
+}
+
+h4 {
+  font-family: "Heading-Font-2", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-family: "Heading-Font-2", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--an-black-200);
+}
+
+/*MARK: paragraphs*/
+p,
+label {
+  /* pretty much just the default font */
+  font-family: "Main-Font", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quote {
+  font-family: "Sub-Font", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.caption {
+  font-family: "Sub-Font", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.barcode {
+  font-family: "Libre_Barcode_128", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+
+  /* make the sizing essentially hug the font*/
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.accent-font {
+  font-family: "Accent-Font", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /*MARK: Links*/
@@ -98,7 +169,7 @@ a:hover {
 }
 
 .image-link-a::after {
-  content: "🟄✦🟄";
+  content: "✦🟄";
   bottom: 0;
   left: 0;
 }
