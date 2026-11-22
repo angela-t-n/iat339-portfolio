@@ -273,7 +273,7 @@ ul li::marker {
   transition: var(--transition-duration);
 
   display: inline-flex;
-  gap: 4px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
 
@@ -384,7 +384,7 @@ ul li::marker {
   /* text-box-trim: trim-both;
   text-box-edge: cap alphabetic; */
   line-height: 0.1rem;
-  padding: 0.3rem 0 0.1rem 0;
+  padding: 3px 0 1.5px 0;
 }
 
 .star-button:hover::before,
