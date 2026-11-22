@@ -99,7 +99,8 @@ h5 {
 
 /*MARK: >paragraphs*/
 p,
-label {
+label,
+li {
   /* pretty much just the default font */
   font-family: "Huninn", sans-serif;
   font-style: normal;
@@ -239,6 +240,7 @@ ul {
 }
 
 li {
+  line-height: 1.5rem;
   padding-left: 0.2rem;
 }
 
@@ -506,7 +508,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Using#example
 .chip > * {
   font-family: "Cascadia_Code";
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .cm::before {
