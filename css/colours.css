@@ -1,7 +1,14 @@
+/*
+  Technically this just stores all the variables in 1 neat file
+  colours.css isn't the best name for it but... well... it's mainly colours
+*/
 :root {
+  /* root variables */
   --transition-duration: 0.2s;
 
   /* 
+    colour variables
+    
     in the case that I need to use a framework later 
     and want to preserve the frameworks' colour choices
     i'll name my colour variables with the prefix "an",

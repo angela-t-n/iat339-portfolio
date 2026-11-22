@@ -1,3 +1,8 @@
+/*
+  commonly used patterns like grids, flex column, etc. so I don't need to
+  repeat the same pattern over and over again.
+*/
+
 .flex-column {
   display: flex;
   flex-direction: column;

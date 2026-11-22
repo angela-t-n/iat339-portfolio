@@ -1,0 +1,96 @@
+/*MARK: Dropdown/Accordion*/
+/*#region*/
+
+/* default summary styling */
+summary {
+  cursor: pointer;
+  font-family: "Kodchasan";
+  font-size: 1.3rem;
+  color: var(--an-purple-100);
+}
+
+/*
+  marker customization
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary#changing_the_summarys_icon
+
+  found that the marker itself is restrictive, i like the ::before element more...
+*/
+summary {
+  list-style: none;
+
+  &::before {
+    content: "+";
+    font-weight: bold;
+    line-height: 0.1em;
+    padding-bottom: 0.2em;
+  }
+  [open] &::before {
+    content: "−";
+  }
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 
+  these are accordion unique: 
+*/
+/* MARK:> accordion header */
+.accordion-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+
+  padding: 0.5rem 0;
+  border: 1px solid var(--an-purple-500);
+  border-left: none;
+
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  transition:
+    border-color var(--transition-duration) ease,
+    border-bottom-right-radius var(--transition-duration) ease;
+}
+
+.accordion[open] .accordion-summary {
+  border-bottom: 1px solid var(--an-magenta-800);
+  border-bottom-right-radius: 0;
+}
+
+/* MARK:> accordion body */
+.accordion-body {
+  border: 1px solid var(--an-magenta-600);
+  border-left: transparent;
+  border-top: transparent;
+  border-bottom-right-radius: 16px;
+
+  margin: 0;
+  padding: 1em 0.5em;
+}
+
+.accordion:not([open]) .accordion-body {
+  animation: none;
+}
+
+/* this really bothered me so i looked into making a simple animation...
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Using#examples */
+@keyframes accordionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accordion[open] .accordion-body {
+  animation: accordionReveal calc(var(--transition-duration) + 0.1s) ease-in;
+  border-bottom-color: var(--an-red-500);
+}
+
+/*#endregion - dropdown/accordion*/

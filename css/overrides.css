@@ -1,7 +1,12 @@
-.trim-text {
+/*
+  These are meant to just overide globally and can be put under "any" css file
+*/
+
+/* not css 3 compatible */
+/* .trim-text {
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
-}
+} */
 
 .subtitle-accent {
   font-size: 1.15rem;
