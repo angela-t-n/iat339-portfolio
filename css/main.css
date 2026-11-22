@@ -15,7 +15,8 @@ body {
 }
 
 code {
-  background-color: var(--offwhite);
+  background-color: #ded5e98c;
+  color: #000000;
   padding: 0.5em 0.75em;
   display: block;
 
@@ -68,8 +69,8 @@ a:hover {
 .image-link-a {
   display: inline-flex;
   position: relative;
-  border: 2px solid var(--an-purple-500);
-  border-radius: 8%;
+  border: 1.5px solid var(--an-purple-500);
+  border-radius: 8px;
   transition: var(--transition-duration);
 }
 
@@ -81,21 +82,30 @@ a:hover {
   transition: var(--transition-duration);
 }
 
-/* psuedo element to put in the corner of the img
+/* psuedo elements to put in the corner of the img
 */
-.image-link-a::before {
-  content: "🔗";
+.image-link-a::before,
+.image-link-a::after {
   position: absolute;
-  top: 0;
-  right: 0;
   padding: 8px;
-
   z-index: 1;
 }
 
+.image-link-a::before {
+  content: "🟄✦➜]";
+  top: 0;
+  right: 0;
+}
+
+.image-link-a::after {
+  content: "🟄✦🟄";
+  bottom: 0;
+  left: 0;
+}
+
 .image-link-a:hover {
-  border: 2px solid var(--an-red-500);
-  border-radius: 5%;
+  border: 1.5px solid var(--an-red-500);
+  border-radius: 16px;
 }
 
 /*

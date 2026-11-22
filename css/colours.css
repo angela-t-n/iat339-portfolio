@@ -14,64 +14,63 @@
   /* 
   ===== Shades =====
   */
-  --an-white-100: #fff;
-  --an-white-200: #fff;
-  --an-white-300: #fff;
-  --an-white-400: #fff;
+  --an-white-100: #e7dede;
+  --an-white-200: #f5f5f5;
+  --an-white-300: #fdfdfd;
 
-  --an-silver-100: #fff;
-  --an-silver-200: #fff;
-  --an-silver-300: #fff;
+  --an-silver-100: #a29696;
+  --an-silver-200: #b9b0b0;
+  --an-silver-300: #cabebe;
+  --an-silver-400: #d4c9c9;
 
-  --an-black-600: #fff;
-  --an-black-700: #fff;
-  --an-black-800: #fff;
-  --an-black-900: #fff;
+  --an-black-100: #141414;
+  --an-black-200: #201e1e;
+  --an-black-300: #484646;
+  --an-black-400: #5e5a5a;
 
   /* 
   ===== Purples =====
   */
-  --an-purple-100: #fff;
-  --an-purple-200: #fff;
-  --an-purple-300: #fff;
-  --an-purple-400: #fff;
+  --an-purple-100: #2b1d43;
+  --an-purple-200: #3f2d5d;
 
-  --an-purple-500: #fff;
+  --an-purple-500: #524782;
+  --an-purple-550: #594c71;
 
-  --an-purple-600: #fff;
-  --an-purple-700: #fff;
-  --an-purple-800: #fff;
-  --an-purple-900: #fff;
+  --an-purple-600: #6f5f8b;
+  --an-purple-700: #7d6ca4;
+  --an-purple-800: #aea2c0;
+  --an-purple-900: #f8f6fb;
 
   /* 
   ===== Reds ===== 
   */
-  --an-red-100: #fff;
-  --an-red-200: #fff;
-  --an-red-300: #fff;
-  --an-red-400: #fff;
+  --an-red-100: #540404;
 
-  --an-red-500: #fff;
+  --an-red-500: #720000;
+  --an-red-550: #803232;
 
-  --an-red-600: #fff;
-  --an-red-700: #fff;
-  --an-red-800: #fff;
-  --an-red-900: #fff;
+  --an-red-600: #743737;
+  --an-red-650: #954040;
+
+  --an-red-700: #b36565;
+  --an-red-800: #e08d8a;
+  --an-red-900: #f3dddc;
 
   /* 
   ===== Magentas =====
   */
-  --an-magenta-100: #fff;
-  --an-magenta-200: #fff;
-  --an-magenta-300: #fff;
-  --an-magenta-400: #fff;
+  --an-magenta-100: #440d2a;
+  --an-magenta-200: #602646;
+  --an-magenta-300: #794775;
 
-  --an-magenta-500: #fff;
+  --an-magenta-500: #714661;
+  --an-magenta-550: #8f5f79;
 
-  --an-magenta-600: #fff;
-  --an-magenta-700: #fff;
-  --an-magenta-800: #fff;
-  --an-magenta-900: #fff;
+  --an-magenta-600: #8a6b87;
+  --an-magenta-700: #b487af;
+  --an-magenta-800: #c5a2c5;
+  --an-magenta-900: #f1e4f1;
 
   /* 
   ===== Other? =====

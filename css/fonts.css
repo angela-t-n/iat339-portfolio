@@ -108,7 +108,8 @@ MARK: Accents
 /* Code Block fonts: Cascadia Code */
 @font-face {
   font-family: "Cascadia_Code";
-  src: url("../fonts/Cascadia_Code/CascadiaCode-Light.ttf");
+  src: url("../fonts/Cascadia_Code/CascadiaCode-VariableFont_wght.ttf");
+  font-variation-settings: "wght" 365;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
