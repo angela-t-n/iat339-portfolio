@@ -51,20 +51,6 @@
 
       <!-- Default Button styling section -->
       <section>
-        <h2 id="nav-button">🟄 Navigation Button ✦🟄-</h2>
-
-        <a class="base-button star-button" href="#nav-button">Default Button</a>
-
-        <div class="showcase-section">
-          <h3>× CSS selector:</h3>
-          <p>.style-guide-button-nav</p>
-
-          <h3>Sample code:</h3>
-          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-        </div>
-      </section>
-
-      <section>
         <h2>🟄 Normal link ✦🟄-</h2>
 
         <a href="https://www.lipsum.com/feed/html"
@@ -89,7 +75,7 @@
           Maecenas porttitor velit at lorem finibus ultricies. Cras vel enim
           nisi. Aliquam quis augue sit amet mauris elementum vestibulum. Donec
           <a class="in-text-link" href="https://www.lipsum.com/feed/html"
-            >Over here! I'm an in-text link!
+            >Over here! Hello!! I'm an in-text link! Noticed me?
           </a>
           lacinia erat pretium fringilla blandit. Donec fermentum elit eget enim
           bibendum gravida. In hac habitasse platea dictumst.
@@ -105,10 +91,48 @@
       </section>
 
       <section>
+        <h2>🟄 Image as a link ✦🟄-</h2>
+
+        <a
+          class="image-link-a"
+          href="https://en.wikipedia.org/wiki/Cat"
+          target="_blank"
+        >
+          <img
+            class="image-link-img"
+            src="../img/cat-1.png"
+            alt="Doodle of a smiling cat"
+          >
+        </a>
+
+        <div class="showcase-section">
+          <h3>× CSS selector:</h3>
+          <p>.style-guide-button-nav</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="nav-button">🟄 Navigation Button ✦🟄-</h2>
+
+        <a class="base-button star-button" href="#nav-button">Default Button</a>
+
+        <div class="showcase-section">
+          <h3>× CSS selector:</h3>
+          <p>.style-guide-button-nav</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        </div>
+      </section>
+
+      <section>
         <h2 id="button-demo">🟄 Other Button Types ✦🟄-</h2>
 
         <div class="flex-column">
-          <div class="flex-row gap-24">
+          <div class="flex-row wrap gap-24">
             <div>
               <h3>Button Tag</h3>
               <button class="base-button star-button" type="button"></button>
@@ -128,7 +152,7 @@
             </div>
           </div>
 
-          <div class="flex-row gap-24">
+          <div class="flex-row wrap gap-24">
             <div>
               <h3>Border Only</h3>
               <a
@@ -164,7 +188,7 @@
             </div>
           </div>
 
-          <div class="flex-row gap-24">
+          <div class="flex-row wrap gap-24">
             <div>
               <h3>Header Font Button</h3>
               <button
@@ -224,31 +248,43 @@
       <section>
         <h2>🟄 Dropdown/Accordion ✦🟄-</h2>
 
-        <p>TODO... :3</p>
+        <div>
+          <h3>Closed by Default:</h3>
+          <details class="accordion">
+            <summary class="accordion-summary">
+              This is the accordion's header thingy
+            </summary>
 
-        <div class="showcase-section">
-          <h3>× CSS selector:</h3>
-          <p>.style-guide-button-nav</p>
-
-          <h3>Sample code:</h3>
-          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+            <div class="accordion-body">
+              <p>
+                Hello! You have revealed the inner text! Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Proin eu est sed neque semper
+                cursus. Maecenas porttitor velit at lorem finibus ultricies.
+                Cras vel enim nisi. Aliquam quis augue sit amet mauris elementum
+                vestibulum.
+              </p>
+            </div>
+          </details>
         </div>
-      </section>
 
-      <section>
-        <h2>🟄 Image as a link ✦🟄-</h2>
+        <div>
+          <h3>Opened by Default:</h3>
+          <details class="accordion" open>
+            <summary class="accordion-summary">
+              This is the accordion's header thingy
+            </summary>
 
-        <a
-          class="image-link-a"
-          href="https://en.wikipedia.org/wiki/Cat"
-          target="_blank"
-        >
-          <img
-            class="image-link-img"
-            src="../img/cat-1.png"
-            alt="Doodle of a smiling cat"
-          >
-        </a>
+            <div class="accordion-body">
+              <p>
+                Hello! You have revealed the inner text! Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Proin eu est sed neque semper
+                cursus. Maecenas porttitor velit at lorem finibus ultricies.
+                Cras vel enim nisi. Aliquam quis augue sit amet mauris elementum
+                vestibulum.
+              </p>
+            </div>
+          </details>
+        </div>
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
@@ -296,10 +332,10 @@
         <h2>🟄 Paragraphs & Accents ✦🟄-</h2>
 
         <p>
-          This is a paragraph.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Proin eu est sed neque semper cursus. Maecenas porttitor velit
-          at lorem finibus ultricies. Cras vel enim nisi. Aliquam quis augue sit
-          amet mauris elementum vestibulum.
+          This is a paragraph. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Proin eu est sed neque semper cursus. Maecenas
+          porttitor velit at lorem finibus ultricies. Cras vel enim nisi.
+          Aliquam quis augue sit amet mauris elementum vestibulum.
         </p>
         <p class="quote">
           "To quote: wow this is a lot of stuff! Lorem ipsum dolor sit amet,

@@ -125,8 +125,21 @@ label {
   font-size: 2rem;
 
   /* make the sizing essentially hug the font*/
-  text-box-trim: trim-both;
-  text-box-edge: cap alphabetic;
+  /* text-trim stuff isn't valid on CSS 3...*/
+  /* text-box-trim: trim-both;
+  text-box-edge: cap alphabetic; */
+
+  /* 
+    manually hand adjusted it on inspect element first 
+    having line-height set to 0 is ok as it's not supposed to overflow to a new line.
+    must manually make sure this doesn't flex wrap either
+  */
+  line-height: 0;
+  margin: 0;
+
+  /* need to use em so that it's reactive to the font-size later */
+  padding-top: 0.6em;
+  padding-bottom: 0.2em;
 }
 
 .Michroma {
@@ -234,6 +247,9 @@ ul {
   MARK: > base button! 
 */
 .base-button {
+  cursor: pointer;
+  transition: var(--transition-duration);
+
   display: inline-flex;
   gap: 4px;
   align-items: center;
@@ -251,8 +267,9 @@ ul {
   font-weight: 300;
   font-size: 1.2rem;
 
-  text-box-trim: trim-both;
-  text-box-edge: cap alphabetic;
+  /* text-trim stuff isn't valid on CSS 3...*/
+  /* text-box-trim: trim-both;
+  text-box-edge: cap alphabetic; */
 
   background-color: var(--an-purple-700);
   color: var(--an-white-fff);
@@ -340,8 +357,9 @@ ul {
   font-size: 1.3rem;
   width: 17px;
 
-  text-box-trim: trim-both;
-  text-box-edge: cap alphabetic;
+  /* text-trim stuff isn't valid on CSS 3...*/
+  /* text-box-trim: trim-both;
+  text-box-edge: cap alphabetic; */
 }
 
 .star-button:hover::before,
@@ -351,8 +369,91 @@ ul {
 }
 /*#endregion - buttons*/
 
+/*MARK: Dropdown/Accordion*/
+/*#region*/
+
+/* MARK:> header part of the dropdown */
+.accordion-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+
+  font-family: "Kodchasan";
+  font-size: 1.3rem;
+  cursor: pointer;
+
+  padding: 0.5rem 0;
+  border: 1px solid var(--an-purple-500);
+  border-left: none;
+
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  transition:
+    border-color var(--transition-duration) ease,
+    border-bottom-right-radius var(--transition-duration) ease;
+}
+
+.accordion[open] .accordion-summary {
+  border-bottom: 1px solid var(--an-magenta-800);
+  border-bottom-right-radius: 0;
+}
+
+/* MARK:> dropdown contents */
+.accordion-body {
+  border: 1px solid var(--an-magenta-600);
+  border-left: transparent;
+  border-top: transparent;
+  border-bottom-right-radius: 16px;
+
+  margin: 0;
+  padding: 1em 0.5em;
+}
+
+/* this really bothered me so i looked into making a simple animation...
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Using#examples */
+@keyframes accordionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accordion[open] .accordion-body {
+  animation: accordionReveal calc(var(--transition-duration) + 0.1s);
+  border-bottom-color: var(--an-red-500);
+}
+/*
+  MARK:> marker customization
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary#changing_the_summarys_icon
+
+  found that the marker itself is restrictive, i like the ::before element more...
+*/
+.accordion-summary {
+  list-style: none;
+
+  &::before {
+    content: "+";
+    font-weight: bold;
+    line-height: 0.1em;
+    padding-bottom: 0.2em;
+  }
+  [open] &::before {
+    content: "−";
+  }
+}
+
+.accordion-summary::-webkit-details-marker {
+  display: none;
+}
+/*#endregion - dropdown/accordion*/
+
 /*MARK: Forms but I don't think I need these:*/
 /*MARK: Text Inputs*/
 /*MARK: Radio*/
 /*MARK: Checkbox*/
-/*MARK: Dropdown*/
