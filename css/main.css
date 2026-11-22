@@ -374,9 +374,10 @@ ul li::marker {
 }
 
 /* 
-  MARK: > star decoration infront of the text 
+  MARK: > mark decorations infront of the text 
 */
-.star-button::before {
+/* sparkle icon */
+.star-mark::before {
   content: "⟡";
   font-family: monospace;
   font-size: 1.3rem;
@@ -389,10 +390,51 @@ ul li::marker {
   padding: 3px 0 1.5px 0;
 }
 
-.star-button:hover::before,
-.star-button:focus-visible::before,
-.star-button:focus::before {
+.star-mark:hover::before,
+.star-mark:focus-visible::before,
+.star-mark:focus::before {
   content: "✦";
+}
+
+/* check for submit button */
+.check-mark::before {
+  content: "○";
+  font-family: monospace;
+  font-size: 1.3rem;
+  width: 17px;
+
+  /* text-trim stuff isn't valid on CSS 3...*/
+  /* text-box-trim: trim-both;
+  text-box-edge: cap alphabetic; */
+  line-height: 0.1rem;
+  padding: 3px 0 1.5px 0;
+}
+
+.check-mark:hover::before,
+.check-mark:focus-visible::before,
+.check-mark:focus::before {
+  content: "●";
+}
+
+/* reset button */
+.reset-mark::before {
+  content: "↻";
+  font-family: monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 20px;
+
+  /* text-trim stuff isn't valid on CSS 3...*/
+  /* text-box-trim: trim-both;
+  text-box-edge: cap alphabetic; */
+  line-height: 0.1rem;
+  padding: 3.5px 0 0 0;
+}
+
+.reset-mark:hover::before,
+.reset-mark:focus-visible::before,
+.reset-mark:focus::before {
+  content: "⟳";
 }
 /*#endregion - buttons*/
 
