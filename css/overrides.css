@@ -27,3 +27,19 @@
   font-weight: 100;
   font-size: 1rem;
 }
+
+.purple-500 {
+  color: var(--an-purple-500);
+}
+
+.purple-850-bg {
+  background-color: var(--an-purple-850);
+}
+
+.magenta-900-bg {
+  background-color: var(--an-magenta-900);
+}
+
+.red-900-bg {
+  background-color: var(--an-red-900);
+}

@@ -2,10 +2,11 @@
 @import url("./fonts.css");
 @import url("./guides.css");
 
-@import url("./components/nav-and-footer.css");
+@import url("./components/svg-masks.css");
 @import url("./components/buttons.css");
 @import url("./components/dropdown-and-accordions.css");
 @import url("./components/forms.css");
+@import url("./components/nav-and-footer.css");
 
 /*
   Main.css should contain smaller atoms not part of a larger component or concept.
@@ -26,6 +27,7 @@
 }
 
 body {
+  margin: 0;
   font-family: "Huninn", sans-serif;
   font-style: normal;
   font-weight: 400;

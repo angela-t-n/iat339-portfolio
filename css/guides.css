@@ -22,3 +22,103 @@
 .gap-24 {
   gap: 24px;
 }
+
+/* page stuff */
+.min-viewport {
+  height: 100%;
+  min-height: 100vh;
+}
+
+/*MARK: Hero*/
+.hero {
+  position: relative;
+  height: 30rem;
+  background-color: var(--an-purple-700);
+
+  padding: 2rem;
+  justify-content: flex-end;
+
+  margin-bottom: 1.5rem;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  height: 2.5px;
+
+  /* sits 0.75rem below the bottom edge of .hero */
+  top: calc(100% + 0.75rem);
+  left: 0.5rem;
+
+  /* stops short to leave room for the stars */
+  right: 3.5rem;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-image */
+  background: linear-gradient(
+    to right,
+    var(--an-purple-500),
+    var(--an-magenta-500),
+    var(--an-red-500)
+  );
+}
+
+/* The stars sitting at the right end of the line */
+.hero::after {
+  position: absolute;
+  content: "🟄✦❖";
+  line-height: 1;
+
+  /* sits below the bottom edge of .hero AND starts on the mid-line of the edge*/
+  top: calc(100% + 0.75rem + 1.25px);
+
+  right: 0.5rem;
+
+  /* center stars vertically on the 2.5px line */
+  transform: translateY(-50%);
+  color: var(--an-red-500);
+}
+
+/*MARK: Sections*/
+.content-section {
+  justify-content: center;
+  padding: 2rem;
+  min-height: 30rem;
+  gap: 24px;
+}
+
+.section-short {
+  min-height: 10rem;
+  align-items: center;
+}
+
+/*MARK:> grid sectins*/
+.section-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 1000px) {
+  .section-1-1-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-1-1-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-item {
+  gap: 24px;
+}
+
+/* close the gap just between the h3 and p */
+.section-item h3 + p {
+  margin-top: -16px;
+}
+.section-item > * {
+  margin: 0;
+}
