@@ -29,13 +29,18 @@
   min-height: 100vh;
 }
 
-/*MARK: Hero*/
+/*
+  MARK: Hero
+*/
 .hero {
   position: relative;
-  height: 30rem;
-  background-color: var(--an-purple-700);
+  min-height: 30rem;
+  max-height: 80vh;
+  background-color: var(--an-purple-800);
 
-  padding: 2rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-end;
 
   margin-bottom: 1.5rem;
@@ -78,7 +83,9 @@
   color: var(--an-red-500);
 }
 
-/*MARK: Sections*/
+/*
+  MARK: Sections
+*/
 .content-section {
   justify-content: center;
   padding: 2rem;
@@ -91,7 +98,7 @@
   align-items: center;
 }
 
-/*MARK:> grid sectins*/
+/* MARK:> grid sectins */
 .section-1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -111,10 +118,10 @@
   }
 }
 
+/* a sub item of a section */
 .section-item {
   gap: 24px;
 }
-
 /* close the gap just between the h3 and p */
 .section-item h3 + p {
   margin-top: -16px;

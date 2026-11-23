@@ -42,6 +42,7 @@
   padding: 1rem 1rem 1.5rem 1rem;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
@@ -85,8 +86,14 @@
   color: var(--an-red-500);
 }
 
+.footer-left {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .footer-left > * {
   color: var(--an-purple-500);
+  margin: 0;
 }
 .footer-left > *:first-child {
   color: var(--an-purple-100);
@@ -97,4 +104,15 @@
 }
 .footer-right .base-button {
   color: var(--an-white-300);
+}
+
+@media (max-width: 800px) {
+  .main-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
 }

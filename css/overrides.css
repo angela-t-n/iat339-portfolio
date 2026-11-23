@@ -13,6 +13,26 @@
   color: var(--an-purple-200);
 }
 
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-20 {
+  gap: 24px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
 /* alternative font for buttons? */
 .host-grotesk-button {
   font-family: "Host_Grotesk", sans-serif;
