@@ -1,10 +1,43 @@
-TODO (250~300 words)
 1. Describe the project
+    My goal was to create a virtual dress-up plushie that can be "brought to life" using Augmented Reality.
+
+    I have many plushies I personally enjoy bringing and taking pictures with at events. It's been sort of a trend for a while now,
+    with how much brands like Labubu, Chikawa, Sanrio, etc, blew up. My only gripe is that, I wish these plushies could
+    match my outfits too. However, sewing/crocheting my own outfits for these plushies would take much more time than drawing them!
+
+    Therefore, I wanted to create an app where I can experience dressing up a plush, and taking pictures with it on my phone.
 
 2. Analyze and explain the project
 (context, team, what did you do, stages of work, etc)
+    I soloed this entire project.
+
+    Using React Native in JavaScript (not TypeScript), Expo Go, FireBase, and ViroVR Library, I was able to create an app
+    which allowed me to dress-up a 2d "plushie", and place the plushie anywhere in the real-world through a phone's
+    camera feed. I drew all the art for it and designed the entire UI/UX of the app myself.
+
+    The initial stage involved some wireframing and creating components that weren't "connected" to anything.
+    Then, we slowly started connecting things to FireBase and utilizing actual device hardware such as cameras and sensors.
+    I learned how to use practically all of my phone's sensors and capabilities using Expo to fast-track it, as it'd
+    realistically take much more work to do it without Expo.
+
+    All of the art I had to draw myself as well. Everything from the app to the slide decks and so on were made by me.
 
 3. Identify problems and resolutions
+    Problem: Not enough time.
+    Solution: I learned how to project manage (gradually) and prioritize features that would benefit UX over UI.
+    The goal was to create a usable and fun experience, the visual aspects of it can be fine tuned later!
+
+    Problem: ViroVR initially was a bit unstable not as throughly documented as I hoped.
+    Solution: A lot of trial and error, and so much research and documentation scouring was needed to get the
+    library to compile and work. Since it was not an official ExpoGo library, I also had to go through hoops to
+    figure out how to get it on the Expo simulator. In the end, I needed to also read and implement Expo's
+    documentations on "compiling" an test app using their webapp. It took a lot of time but in the end, I managed!
 
 4. Evaluate Effectiveness
 (what did you learn?)
+    I learned how to create mobile apps using a web-based programming language (React). Technically
+    two birds, one stone as that also allowed me to learn React in an educational environment too.
+    
+    I learned how to utilize and gamify a mobile device's built-in sensors such as the camera,
+    gyroscope, and accelerometer! I also learned how to program for cross-platform, since the project
+    was written in React.

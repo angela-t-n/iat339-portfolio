@@ -64,7 +64,15 @@
           <p>a</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <div>
+            <pre>
+              <code>
+&lt;a href="https://www.lipsum.com/feed/html" &gt; 
+  I'm just a normallink :) 
+&lt;/a&gt;
+              </code>
+            </pre>
+          </div>
         </div>
       </section>
 
@@ -88,7 +96,21 @@
           <p>p, a, .in-text-link</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;p&gt;
+  This is a long long long thingymabob. Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Proin eu est sed neque semper cursus.
+  Maecenas porttitor velit at lorem finibus ultricies. Cras vel enim
+  nisi. Aliquam quis augue sit amet mauris elementum vestibulum. Donec
+  &lt;a class="in-text-link" href="https://www.lipsum.com/feed/html"
+    &gt;Over here! Hello!! I'm an in-text link! Noticed me?
+  &lt;/a&gt;
+  lacinia erat pretium fringilla blandit. Donec fermentum elit eget enim
+  bibendum gravida. In hac habitasse platea dictumst.
+&lt;/p&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
@@ -109,10 +131,24 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>a, img, image-link-a, image-link-img</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;a
+  class="image-link-a"
+  href="https://en.wikipedia.org/wiki/Cat"
+  target="_blank"
+&gt;
+  &lt;img
+    class="image-link-img"
+    src="../img/cat-1.png"
+    alt="Doodle of a smiling cat"
+  &gt;
+&lt;/a&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
@@ -127,10 +163,20 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>
+            .base-button, .border-button, .nib-button, .star-mark, .lbr-button
+          </p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+ &lt;a
+  class="base-button border-button nib-button star-mark lbr-button"
+  href="#nav-button"
+  &gt;Default Button&lt;/a
+&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
@@ -248,10 +294,131 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>
+            .base-button, .star-mark, .border-button, .lbr-button, .nib-button,
+            .host-grotesk-button, .michroma-button,
+          </p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+
+          <details>
+            <summary class="red-600-bold">
+              ❯ Dropdown as the code block is too long
+            </summary>
+
+            <pre>
+              <code>
+&lt;div class="flex-column"&gt;
+  &lt;div class="flex-row wrap gap-24"&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Button Tag&lt;/h3&gt;
+      &lt;button class="base-button star-mark" type="button"&gt;&lt;/button&gt;
+      &lt;button class="base-button star-mark" type="button"&gt;
+        Icon & Text
+      &lt;/button&gt;
+      &lt;button class="base-button" type="button"&gt;Text Only&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;h3&gt;Link Tag&lt;/h3&gt;
+      &lt;a class="base-button star-mark" href="#button-demo"&gt;&lt;/a&gt;
+      &lt;a class="base-button star-mark" href="#button-demo"
+        &gt;Icon & Text&lt;/a
+      &gt;
+      &lt;a class="base-button" href="#button-demo"&gt;Text Only&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="flex-row wrap gap-24"&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Border Only&lt;/h3&gt;
+      &lt;a
+        class="base-button border-button star-mark"
+        href="#button-demo"
+      &gt;&lt;/a&gt;
+      &lt;a class="base-button border-button star-mark" href="#button-demo"
+        &gt;Icon & Text&lt;/a
+      &gt;
+      &lt;a class="base-button border-button" href="#button-demo"
+        &gt;Text Only&lt;/a
+      &gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;h3&gt;No Initial Border&lt;/h3&gt;
+      &lt;a
+        class="base-button border-button nib-button star-mark"
+        href="#button-demo"
+      &gt;&lt;/a&gt;
+      &lt;a
+        class="base-button border-button nib-button star-mark"
+        href="#button-demo"
+        &gt;Icon & Text&lt;/a
+      &gt;
+      &lt;a
+        class="base-button border-button nib-button"
+        href="#button-demo"
+        &gt;Text Only&lt;/a
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="flex-row wrap gap-24"&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Header Font Button&lt;/h3&gt;
+      &lt;button
+        class="host-grotesk-button base-button star-mark"
+        type="button"
+      &gt;&lt;/button&gt;
+      &lt;button
+        class="host-grotesk-button base-button star-mark"
+        type="button"
+      &gt;
+        Icon & Text
+      &lt;/button&gt;
+      &lt;button class="host-grotesk-button base-button" type="button"&gt;
+        Text Only
+      &lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;h3&gt;Accent Font Button&lt;/h3&gt;
+      &lt;a
+        class="michroma-button base-button star-mark"
+        href="#button-demo"
+      &gt;&lt;/a&gt;
+      &lt;a
+        class="michroma-button base-button star-mark"
+        href="#button-demo"
+        &gt;Icon & Text&lt;/a
+      &gt;
+      &lt;a class="michroma-button base-button" href="#button-demo"
+        &gt;Text Only&lt;/a
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;h3&gt;Less Border Radius&lt;/h3&gt;
+    &lt;a class="lbr-button base-button star-mark" href="#button-demo"
+      &gt;Icon & Text&lt;/a
+    &gt;
+    &lt;a
+      class="lbr-button base-button border-button star-mark"
+      href="#button-demo"
+      &gt;Icon & Text&lt;/a
+    &gt;
+
+    &lt;a
+      class="lbr-button base-button border-button nib-button star-mark"
+      href="#button-demo"
+      &gt;Icon & Text&lt;/a
+    &gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </pre>
+          </details>
         </div>
       </section>
 
@@ -298,10 +465,57 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>
+            detail, summary, .accordion, .accordion-summary, .accordion-body
+          </p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <details>
+            <summary class="red-600-bold">
+              ❯ Dropdown as the code block is too long
+            </summary>
+            <pre>
+              <code>
+&lt;div&gt;
+  &lt;h3&gt;Closed by Default:&lt;/h3&gt;
+  &lt;details class="accordion"&gt;
+    &lt;summary class="accordion-summary"&gt;
+      This is the accordion's header thingy
+    &lt;/summary&gt;
+
+    &lt;div class="accordion-body"&gt;
+      &lt;p&gt;
+        Hello! You have revealed the inner text! Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Proin eu est sed neque semper
+        cursus. Maecenas porttitor velit at lorem finibus ultricies.
+        Cras vel enim nisi. Aliquam quis augue sit amet mauris elementum
+        vestibulum.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;Opened by Default:&lt;/h3&gt;
+  &lt;details class="accordion" open&gt;
+    &lt;summary class="accordion-summary"&gt;
+      This is the accordion's header thingy
+    &lt;/summary&gt;
+
+    &lt;div class="accordion-body"&gt;
+      &lt;p&gt;
+        Hello! You have revealed the inner text! Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Proin eu est sed neque semper
+        cursus. Maecenas porttitor velit at lorem finibus ultricies.
+        Cras vel enim nisi. Aliquam quis augue sit amet mauris elementum
+        vestibulum.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
+              </code>
+            </pre>
+          </details>
         </div>
       </section>
     </section>
@@ -331,10 +545,24 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>.h1, h2, h3, h4, h5, p, .Michroma, .subtitle-accent</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;div headingoffset="1"&gt;
+  &lt;h1&gt;Heading 1 - Main Titles&lt;/h1&gt;
+  &lt;h2&gt;Heading 2 - Main (but lower) Titles&lt;/h2&gt;
+  &lt;h3&gt;Heading 3 - Sub Titles&lt;/h3&gt;
+  &lt;h4&gt;Heading 4 - Accent almost, but sub title still&lt;/h4&gt;
+  &lt;h5&gt;Heading 5 - fancier "text" above text blocks&lt;/h5&gt;
+
+  &lt;p class="Michroma subtitle-accent"&gt;
+    Accent ❯❯❯ Can be used to accent under headings
+  &lt;/p&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
@@ -365,7 +593,28 @@
           <p>p, .quote, .caption, .barcode</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;p&gt;
+  This is a paragraph. Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit. Proin eu est sed neque semper cursus. Maecenas
+  porttitor velit at lorem finibus ultricies. Cras vel enim nisi.
+  Aliquam quis augue sit amet mauris elementum vestibulum.
+&lt;/p&gt;
+&lt;p class="quote"&gt;
+  "To quote: wow this is a lot of stuff! Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit."
+&lt;/p&gt;
+&lt;p class="caption"&gt;
+  This is a caption, for small text and disclaimers :3. Lorem ipsum
+  dolor sit amet, consectetur adipiscing elit. Proin eu est sed neque
+  semper cursus.
+&lt;/p&gt;
+&lt;p class="barcode"&gt;The Barcode Font Was Cool&lt;/p&gt;
+
+&lt;p class="Michroma"&gt;Whoa what a cool font!&lt;/p&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
@@ -383,10 +632,21 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>ul, li, .purple-marker</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;p&gt;My Bullet Point List:&lt;/p&gt;
+&lt;ul class="purple-marker"&gt;
+  &lt;li&gt;Hello&lt;/li&gt;
+  &lt;li&gt;World&lt;/li&gt;
+  &lt;li&gt;It's super&lt;/li&gt;
+  &lt;li&gt;Duper great to&lt;/li&gt;
+  &lt;li&gt;Meet you, kind friend!&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
@@ -409,10 +669,26 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>ol, li, .red-marker</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;p&gt;My Numbered List:&lt;/p&gt;
+&lt;ol class="red-marker"&gt;
+  &lt;li&gt;Hello&lt;/li&gt;
+  &lt;li&gt;World&lt;/li&gt;
+  &lt;li&gt;It's super&lt;/li&gt;
+  &lt;li&gt;Duper great to&lt;/li&gt;
+  &lt;li&gt;Meet you, kind friend!&lt;/li&gt;
+  &lt;li&gt;Hello&lt;/li&gt;
+  &lt;li&gt;World&lt;/li&gt;
+  &lt;li&gt;It's super&lt;/li&gt;
+  &lt;li&gt;Duper great to&lt;/li&gt;
+  &lt;li&gt;Meet you, kind friend!&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+          </pre>
         </div>
       </section>
     </section>
@@ -456,17 +732,55 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>nav, .main-nav, .main-nav-pages, button css items</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;nav class="main-nav flex-row"&gt;
+  &lt;a
+    class="main-nav-logo base-button border-button star-mark nib-button lbr-button"
+    href="#nav-example"
+    &gt;Home&lt;/a
+  &gt;
+
+  &lt;div class="main-nav-pages flex-row"&gt;
+    &lt;a
+      class="base-button border-button star-mark nib-button lbr-button"
+      href="#nav-example"
+      &gt;Page 1&lt;/a
+    &gt;
+    &lt;a
+      class="base-button border-button star-mark nib-button lbr-button"
+      href="#nav-example"
+      &gt;Page 2&lt;/a
+    &gt;
+    &lt;a
+      class="base-button border-button star-mark nib-button lbr-button"
+      href="#nav-example"
+      &gt;Page 3&lt;/a
+    &gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
       <section>
         <h2>🟄 Footer ✦🟄-</h2>
 
-        <div class="main-footer">
+        <div class="main-footer" headingoffset="1">
+          <h1 class="visibility-hidden">
+            hidden header to bypass html3 header complaints
+          </h1>
+          <h2 class="visibility-hidden">
+            hidden header to bypass html3 header complaints
+          </h2>
+          <h3 class="visibility-hidden">
+            hidden header to bypass html3 header complaints
+          </h3>
+
           <div class="footer-left">
             <h4>✦ Created by Angela Nguyen ✦</h4>
             <h5>🟄❯ IAT 339 - P03 Portfolio.</h5>
@@ -490,10 +804,34 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>.main-footer, .footer-left, .footer-right, button styling</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;div class="main-footer"&gt;
+  &lt;div class="footer-left"&gt;
+    &lt;h4&gt;✦ Created by Angela Nguyen ✦&lt;/h4&gt;
+    &lt;h5&gt;🟄❯ IAT 339 - P03 Portfolio.&lt;/h5&gt;
+  &lt;/div&gt;
+
+  &lt;div class="footer-right flex-row"&gt;
+    &lt;a
+      class="base-button star-mark"
+      href="https://github.com/angela-t-n/iat339-portfolio"
+      target="_blank"
+      &gt;GitHub Repo&lt;/a
+    &gt;
+    &lt;a
+      class="base-button star-mark"
+      href="style-guide.html"
+      target="_blank"
+      &gt;Style Guide&lt;/a
+    &gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
@@ -532,26 +870,71 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>.chip, .cm, .purple-chip, .magenta-chip, .red-chip</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <details>
+            <summary class="red-600-bold">
+              ❯ Dropdown as the code block is too long
+            </summary>
+
+            <pre>
+              <code>
+&lt;h3&gt;No Chip Marker:&lt;/h3&gt;
+&lt;h4&gt;Technical Skills:&lt;/h4&gt;
+&lt;p&gt;Here are chips that show the skill names:&lt;/p&gt;
+&lt;div class="flex-row wrap"&gt;
+  &lt;div class="chip purple-chip"&gt;&lt;p&gt;HTML/CSS&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="chip purple-chip"&gt;&lt;p&gt;React.js&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="chip purple-chip"&gt;&lt;p&gt;TypeScript&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class="chip magenta-chip"&gt;&lt;p&gt;Python&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="chip magenta-chip"&gt;&lt;p&gt;C/C++&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class="chip red-chip"&gt;&lt;p&gt;Figma&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="chip red-chip"&gt;&lt;p&gt;Clip Studio Paint&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Chip Marker:&lt;/h3&gt;
+&lt;h4&gt;Technical Skills:&lt;/h4&gt;
+&lt;p&gt;Here are chips that show the skill names:&lt;/p&gt;
+&lt;div class="flex-row wrap"&gt;
+  &lt;div class="chip cm purple-chip"&gt;&lt;p&gt;HTML/CSS&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="chip cm purple-chip"&gt;&lt;p&gt;React.js&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="chip cm purple-chip"&gt;&lt;p&gt;TypeScript&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class="chip cm magenta-chip"&gt;&lt;p&gt;Python&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="chip cm magenta-chip"&gt;&lt;p&gt;C/C++&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class="chip cm red-chip"&gt;&lt;p&gt;Figma&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="chip cm red-chip"&gt;&lt;p&gt;Clip Studio Paint&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+              </code>
+            </pre>
+          </details>
         </div>
       </section>
 
       <section>
         <h2>🟄 Hero ✦🟄-</h2>
 
-        <div class="hero">
+        <div class="hero" headingoffset="1">
           <h1>Lorem Ipsem</h1>
         </div>
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>hero</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;div class="hero"&gt;
+  &lt;h1&gt;Lorem Ipsem&lt;/h1&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
         </div>
       </section>
 
@@ -578,7 +961,24 @@
           <div
             id="accent-section"
             class="purple-850-bg content-section section-short flex-column gap-8"
+            headingOffset="1"
           >
+            <h1 class="visibility-hidden">
+              hidden header to bypass html3 header complaints
+            </h1>
+            <h2 class="visibility-hidden">
+              hidden header to bypass html3 header complaints
+            </h2>
+            <h3 class="visibility-hidden">
+              hidden header to bypass html3 header complaints
+            </h3>
+            <h4 class="visibility-hidden">
+              hidden header to bypass html3 header complaints
+            </h4>
+            <h5 class="visibility-hidden">
+              hidden header to bypass html3 header complaints
+            </h5>
+
             <h5>⊹⁺ =/ᐠ • ㅅ •マ= Ⳋ ⁺⊹</h5>
             <p class="barcode">i like cats</p>
           </div>
@@ -586,125 +986,50 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>
+            .content-section, .section-short, various background colour
+            overrides, flex gap overrides
+          </p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
-        </div>
-      </section>
+          <details>
+            <summary class="red-600-bold">
+              ❯ Dropdown as the code block is too long
+            </summary>
+            <pre>
+              <code>
+&lt;div&gt;
+  &lt;h3&gt;Normal Section:&lt;/h3&gt;
 
-      <section>
-        <h2>🟄 Template_Style_Guide_Section ✦🟄-</h2>
+  &lt;div id="about-section" class="content-section flex-column"&gt;
+    &lt;h2&gt;Contact Me!&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
+      est sed neque semper cursus. Maecenas porttitor velit at lorem
+      finibus ultricies. Cras vel enim nisi. Aliquam quis augue sit amet
+      mauris elementum vestibulum.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-        <p>TODO... :3</p>
+&lt;div&gt;
+  &lt;h3&gt;Short & Coloured Section:&lt;/h3&gt;
 
-        <div class="showcase-section">
-          <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
-
-          <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+  &lt;div
+    id="accent-section"
+    class="purple-850-bg content-section section-short flex-column gap-8"
+  &gt;
+    &lt;h5&gt;⊹⁺ =/ᐠ • ㅅ •マ= Ⳋ ⁺⊹&lt;/h5&gt;
+    &lt;p class="barcode"&gt;i like cats&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </pre>
+          </details>
         </div>
       </section>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
-
-    <!-- FORMS SECTION // -->
-    <section id="form_elements" headingoffset="1">
-      <h1 class="trim-override">❖ Forms Elements If Needed... ❖</h1>
-      <p class="Michroma subtitle-accent">
-        ✦❯❯❯ Input-related elements, though I don't think I quite need a contact
-        form
-      </p>
-      <p class="Michroma subtitle-accent">
-        ✦❯❯❯ NOTE: Since there's no forms, I decided to not style these for now.
-      </p>
-
-      <section>
-        <h2>🟄 Submit/Reset Buttons ✦🟄-</h2>
-
-        <form>
-          <button class="base-button check-mark" type="submit">Submit</button>
-          <button class="base-button reset-mark" type="reset">Reset</button>
-        </form>
-
-        <div class="showcase-section">
-          <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
-
-          <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
-        </div>
-      </section>
-
-      <section>
-        <h2>🟄 Text Input Field ✦🟄-</h2>
-
-        <form>
-          <label>
-            Email
-            <input type="email" placeholder="someone@example.com">
-          </label>
-        </form>
-
-        <div class="showcase-section">
-          <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
-
-          <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
-        </div>
-      </section>
-
-      <section>
-        <h2>🟄 Checkbox ✦🟄-</h2>
-
-        <form>
-          <label>
-            <input type="checkbox" id="toggle-ex" value="false">
-            Check this box if you like cats
-          </label>
-        </form>
-
-        <div class="showcase-section">
-          <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
-
-          <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
-        </div>
-      </section>
-
-      <section>
-        <h2>🟄 Radio Button ✦🟄-</h2>
-
-        <form class="flex-column">
-          <label>
-            <input type="radio" name="radio-group" id="var-1" value="1">
-            Choice 1
-          </label>
-
-          <label>
-            <input type="radio" name="radio-group" id="var-2" value="2">
-            Choice 2
-          </label>
-
-          <label>
-            <input type="radio" name="radio-group" id="var-3" value="3">
-            Choice 3
-          </label>
-        </form>
-
-        <div class="showcase-section">
-          <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
-
-          <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
-        </div>
-      </section>
-    </section>
-    <!-- // FORMS ELEMENTS SECTION -->
 
     <!-- TEMPLATE SECTION // -->
     <section id="form_elements" headingoffset="1">
@@ -716,14 +1041,31 @@
       <section>
         <h2>🟄 Template_Style_Guide_Section ✦🟄-</h2>
 
-        <p>TODO... :3</p>
+        <p>TODO..._:3</p>
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>★★★ TODO: Put in styling!</p>
+          <p>★★★_TODO:_Put_in_styling!</p>
 
           <h3>Sample code:</h3>
-          <code>&lt;★★★ TODO: Put in code block!&gt;</code>
+          <pre>
+            <code>
+&lt;★★★_TODO:_Put_in_code_block!&gt;
+            </code>
+          </pre>
+
+          <h3>Sample code:</h3>
+          <details>
+            <summary class="red-600-bold">
+              ❯ Dropdown as the code block is too long
+            </summary>
+
+            <pre>
+              <code>
+&lt;★★★_TODO:_Put_in_code_block!&gt;
+              </code>
+            </pre>
+          </details>
         </div>
       </section>
     </section>

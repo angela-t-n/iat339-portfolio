@@ -48,6 +48,11 @@
   font-size: 1rem;
 }
 
+.red-600-bold {
+  color: var(--an-red-600);
+  font-weight: bold;
+}
+
 .purple-500 {
   color: var(--an-purple-500);
 }
@@ -62,4 +67,8 @@
 
 .red-900-bg {
   background-color: var(--an-red-900);
+}
+
+.visibility-hidden {
+  display: none;
 }

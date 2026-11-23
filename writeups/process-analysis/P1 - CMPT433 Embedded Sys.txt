@@ -1,10 +1,44 @@
-TODO (250~300 words)
 1. Describe the project
+    In a group of 3, we created a modular home security camera system! 
 
 2. Analyze and explain the project
 (context, team, what did you do, stages of work, etc)
+    The hardware was built with a Beagley-AI board, with various I2C and PWM sensors or motors. 
+    We also had an Arduino micro-controller to serve as a bluetooth tilt remote using the gyroscope.
+    The entire project was coded in C, on Debian 12 through WSL. Parts of the GPIO communication also required some simple firmware compilation.
+    
+    The begining stages were spent on deciding what modules we should add to a home security system that would differentiate us from typical security cameras.
+    We came up with the idea of having the camera be able to tilt around, and shoot rocks at intruders!
+    Of course, shooting rocks was an engineering nightmare as we had limited time to actually design a rock-shooting contraption.
+    Instead, we pivoted towards more friendly modules. We included a temperature sensor, alarm system with bright lights and speaker output, 
+    the ability to disable alarms remotely using the local web server, and a remote control to tilt the camera.
+
+    Personally, I worked on the live camera feed code and commucation between device and server, and the camera mount and servos. 
+    In addition, the website and webserver communication was something I made along with the camera feed portion.
+    I also heavily did DevOps and did the bulk of the GitHub merging for our group project. I actively assisted in my group
+    member's questions and helped them along the way.
+
+    Thankfully, we had a lot of course-assignment and example code given to us which we can use as reference.
+    Code such as the UDP calls, GPIO/PWM/I2C communication protocols, Audio codex, etc. were given to us as a base.
+    We had to make those work for our seperate project components.
 
 3. Identify problems and resolutions
+    Problem: The bluetooth was not working due to proprietary restrictions.
+    Solution: I made a backup plan where the website and server can communicate with the board and tilt the camera without the remote.
+    The website initially was supposed to only have the camera feed and temperature detected by the sensor. In the end, the bluetooth
+    worked by using a bypass through an ASUS bluetooth dongle.
+
+    Problem: the logitech camera had to be mounted to the metal plate without damaging either items, as they were borrowed
+    Solution: with permission from the professor, I removed the backing mount of the camera and secured it to the metal
+    plate with rubber bands and foam padding. Was an unexpected issue, but it was fun coming up with ways to mount it without
+    screws or glue, using what I had.
+
+    Problem: how do we package this nicely for presentation day?
+    Solution: I carefully carved out a tissue box and taped the dangling modules onto it. I also had to do
+    wire-management and tape the wires onto the box so that it'd stay connected to the board's ports or the breadboard.
 
 4. Evaluate Effectiveness
 (what did you learn?)
+    I learned a lot about embedded programming in C. I had previously done something similar with GPIO ports using a Raspberry Pi in Python.
+    I also learned a lot about client <-> server <-> device programming! It was cool being able to communicate and control a device
+    wirelessly through a webpage, even if it's only on the local network.

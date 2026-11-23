@@ -1,2 +1,9 @@
-TODO
 100-word long bio:
+
+I'm a Computing Science and Interactive Arts & Technology student who loves to bring ideas to life through code and art. 
+
+With experience in Python, C/C++, React, TypeScript, and cloud databases like Firebase and Azure, I pair technical problem-solving with Figma, Adobe Suite, and Clip Studio Paint to build applications that capture my artistic eye from wireframe to deployment. Staying curious and sharing what I’ve learned drives everything I do.
+
+In my free time, I love drawing anime-inspired illustrations and character designs, alongside doodling the silly cats that appear everywhere in my life.
+
+I'm always excited to turn creative concepts into tangible digitial experiences.
