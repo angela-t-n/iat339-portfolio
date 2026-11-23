@@ -1,0 +1,100 @@
+/* 
+    MARK: Main Nav Bar  
+*/
+.main-nav {
+  position: sticky;
+  /* permanently float it on top */
+  z-index: 100;
+  top: 0;
+
+  justify-content: space-between;
+  padding: 0.75rem 0.75rem;
+
+  border: 1px solid var(--an-purple-500);
+  border-top: none;
+  background-color: transparent;
+
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  transition: var(--transition-duration);
+}
+
+.main-nav.scrolled {
+  padding: 0.3rem 0.3rem;
+  background-color: var(--an-white-300);
+
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.main-nav-pages {
+  gap: 24px;
+}
+
+/* 
+    MARK: Footer  
+*/
+.main-footer {
+  position: relative;
+  padding: 1rem 1rem 1.5rem 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 1.5rem;
+}
+
+/* unique gradient line for the top of the border*/
+.main-footer::before {
+  position: absolute;
+  content: "";
+  height: 2.5px;
+
+  /* sits 0.75rem above the top edge of .main-footer */
+  bottom: calc(100% + 0.75rem);
+  left: 0.5rem;
+
+  /* stops short to leave room for the stars */
+  right: 3.5rem;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-image */
+  background: linear-gradient(
+    to right,
+    var(--an-purple-500),
+    var(--an-magenta-500),
+    var(--an-red-500)
+  );
+}
+
+/* The stars sitting at the right end of the line */
+.main-footer::after {
+  position: absolute;
+  content: "🟄✦❖";
+  line-height: 1;
+
+  /* sits 0.75rem above the top edge of .main-footer */
+  bottom: calc(100% + 0.75rem + 1.25px);
+  right: 0.5rem;
+
+  /* center stars vertically on the 2.5px line */
+  transform: translateY(50%);
+  color: var(--an-red-500);
+}
+
+.footer-left > * {
+  color: var(--an-purple-500);
+}
+.footer-left > *:first-child {
+  color: var(--an-purple-100);
+}
+
+.footer-right {
+  gap: 16px;
+}
+.footer-right .base-button {
+  color: var(--an-white-300);
+}
