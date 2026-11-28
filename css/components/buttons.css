@@ -172,4 +172,31 @@
 .reset-mark:focus::before {
   content: "⟳";
 }
+
+/* arrow button */
+.arrow-mark::after {
+  content: "›";
+  font-family: monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 12px;
+
+  /* text-trim stuff isn't valid on CSS 3...*/
+  /* text-box-trim: trim-both;
+  text-box-edge: cap alphabetic; */
+  line-height: 0.1rem;
+}
+
+.arrow-mark:hover::after,
+.arrow-mark:focus-visible::after,
+.arrow-mark:focus::after {
+  content: "»";
+}
+
+/*MARK: Button overrides*/
+.short-button {
+  min-height: 0px;
+  padding: 16px 18px;
+  font-size: 1rem;
+}
 /*#endregion - buttons*/
