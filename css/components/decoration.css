@@ -1,0 +1,88 @@
+/*MARK: Top Deco Border*/
+.deco-border-top {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+/* unique gradient line for the top of the border*/
+.deco-border-top::before {
+  position: absolute;
+  content: "";
+  height: 2.5px;
+
+  /* sits 0.75rem above the top edge of .deco-border-top */
+  bottom: calc(100% + 0.75rem);
+  left: 0.5rem;
+
+  /* stops short to leave room for the stars */
+  right: 3.5rem;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-image */
+  background: linear-gradient(
+    to right,
+    var(--an-purple-500),
+    var(--an-magenta-500),
+    var(--an-red-500)
+  );
+}
+
+/* The stars sitting at the right end of the line */
+.deco-border-top::after {
+  position: absolute;
+  content: "🟄✦❖";
+  line-height: 1;
+
+  /* sits 0.75rem above the top edge of .deco-border-top */
+  bottom: calc(100% + 0.75rem + 1.25px);
+  right: 0.5rem;
+
+  /* center stars vertically on the 2.5px line */
+  transform: translateY(50%);
+  color: var(--an-red-500);
+}
+
+/*
+*
+*
+MARK: Bottom Deco Border*/
+.deco-border-bottom {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.deco-border-bottom::before {
+  position: absolute;
+  content: "";
+  height: 2.5px;
+
+  /* sits 0.75rem below the bottom edge of .deco-border-bottom */
+  top: calc(100% + 0.75rem);
+  left: 0.5rem;
+
+  /* stops short to leave room for the stars */
+  right: 3.5rem;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-image */
+  background: linear-gradient(
+    to right,
+    var(--an-purple-500),
+    var(--an-magenta-500),
+    var(--an-red-500)
+  );
+}
+
+/* The stars sitting at the right end of the line */
+.deco-border-bottom::after {
+  position: absolute;
+  content: "🟄✦❖";
+  line-height: 1;
+
+  /* sits below the bottom edge of .deco-border-bottom AND starts on the mid-line of the edge*/
+  top: calc(100% + 0.75rem + 1.25px);
+
+  right: 0.5rem;
+
+  /* center stars vertically on the 2.5px line */
+  transform: translateY(-50%);
+  color: var(--an-red-500);
+}

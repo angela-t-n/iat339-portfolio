@@ -25,6 +25,11 @@
 
 /* page stuff */
 .min-viewport {
+  /* to "reveal" the footer at the end*/
+  position: relative;
+  background-color: var(--an-white-300);
+  z-index: 1;
+
   height: 100%;
   min-height: 100vh;
 }
@@ -38,49 +43,11 @@
   max-height: 80vh;
   background-color: var(--an-purple-800);
 
-  padding: 0.5rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
-  margin-bottom: 1.5rem;
-}
-
-.hero::before {
-  position: absolute;
-  content: "";
-  height: 2.5px;
-
-  /* sits 0.75rem below the bottom edge of .hero */
-  top: calc(100% + 0.75rem);
-  left: 0.5rem;
-
-  /* stops short to leave room for the stars */
-  right: 3.5rem;
-
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-image */
-  background: linear-gradient(
-    to right,
-    var(--an-purple-500),
-    var(--an-magenta-500),
-    var(--an-red-500)
-  );
-}
-
-/* The stars sitting at the right end of the line */
-.hero::after {
-  position: absolute;
-  content: "🟄✦❖";
-  line-height: 1;
-
-  /* sits below the bottom edge of .hero AND starts on the mid-line of the edge*/
-  top: calc(100% + 0.75rem + 1.25px);
-
-  right: 0.5rem;
-
-  /* center stars vertically on the 2.5px line */
-  transform: translateY(-50%);
-  color: var(--an-red-500);
+  padding: 0.5rem 2rem;
 }
 
 /*
@@ -91,6 +58,11 @@
   padding: 2rem;
   min-height: 30rem;
   gap: 24px;
+
+  display: grid;
+  grid-template-columns: min(100%, 1200px);
+  align-content: center;
+  justify-content: center;
 }
 
 .section-short {
