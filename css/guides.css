@@ -47,6 +47,10 @@
   flex-direction: column;
   justify-content: flex-end;
 
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
   padding: 0.5rem 2rem;
 }
 
@@ -63,6 +67,9 @@
   grid-template-columns: min(100%, 1200px);
   align-content: center;
   justify-content: center;
+
+  /* https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html */
+  scroll-margin-top: 5rem;
 }
 
 .section-short {
