@@ -291,13 +291,34 @@
               >Icon & Text</a
             >
           </div>
+
+          <div>
+            <h3>Short Button & Other Markers</h3>
+            <a
+              class="short-button base-button arrow-mark star-mark"
+              href="#button-demo"
+              >Icon & Text</a
+            >
+            <a
+              class="short-button lbr-button base-button reset-mark"
+              href="#button-demo"
+              >Icon & Text</a
+            >
+
+            <a
+              class="base-button short-button border-button nib-button check-mark"
+              href="#button-demo"
+              >Icon & Text</a
+            >
+          </div>
         </div>
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
           <p>
             .base-button, .star-mark, .border-button, .lbr-button, .nib-button,
-            .host-grotesk-button, .michroma-button,
+            .host-grotesk-button, .michroma-button, .short-mark, .reset-mark,
+            .check-mark, .arrow-mark
           </p>
 
           <h3>Sample code:</h3>
@@ -416,6 +437,26 @@
       &gt;Icon & Text&lt;/a
     &gt;
   &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;Short Button & Other Markers&lt;/h3&gt;
+  &lt;a
+    class="short-button base-button arrow-mark star-mark"
+    href="#button-demo"
+    &gt;Icon & Text&lt;/a
+  &gt;
+  &lt;a
+    class="short-button lbr-button base-button reset-mark"
+    href="#button-demo"
+    &gt;Icon & Text&lt;/a
+  &gt;
+
+  &lt;a
+    class="base-button short-button border-button nib-button check-mark"
+    href="#button-demo"
+    &gt;Icon & Text&lt;/a
+  &gt;
 &lt;/div&gt;
               </code>
             </pre>
@@ -771,58 +812,92 @@
       <section>
         <h2>🟄 Footer ✦🟄-</h2>
 
-        <div class="main-footer deco-border-top">
-          <div class="footer-left">
-            <p class="h4-visual-styling">✦ Created by Angela Nguyen ✦</p>
-            <p class="h5-visual-styling">🟄❯ IAT 339 - P03 Portfolio.</p>
+        <div class="main-footer">
+          <!-- cat accent section -->
+          <div
+            id="accent-section"
+            class="purple-850-bg content-section footer-section flex-column gap-8"
+          >
+            <p class="h3-visual-styling text-center">⊹⁺ =/ᐠ • ㅅ •マ= Ⳋ ⁺⊹</p>
+            <p class="barcode text-center">i like cats</p>
           </div>
 
-          <div class="footer-right flex-row">
-            <a
-              class="base-button star-mark"
-              href="https://github.com/angela-t-n/iat339-portfolio"
-              target="_blank"
-              >GitHub Repo</a
-            >
-            <a
-              class="base-button star-mark"
-              href="style-guide.html"
-              target="_blank"
-              >Style Guide</a
-            >
+          <!-- footer buttons -->
+          <div class="footer-wrapper">
+            <div class="footer-left">
+              <p class="h4-visual-styling">✦ Created by Angela Nguyen ✦</p>
+              <p class="h5-visual-styling">🟄❯ IAT 339 - P03 Portfolio.</p>
+            </div>
+
+            <div class="footer-right flex-row">
+              <a
+                class="base-button star-mark"
+                href="https://github.com/angela-t-n/iat339-portfolio"
+                target="_blank"
+                >GitHub Repo</a
+              >
+              <a
+                class="base-button star-mark"
+                href="style-guide.html"
+                target="_blank"
+                >Style Guide</a
+              >
+            </div>
           </div>
         </div>
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>.main-footer, .footer-left, .footer-right, button styling</p>
+          <p>
+            .main-footer, .footer-wrapper, .footer-left, .footer-right, button
+            styling
+          </p>
 
           <h3>Sample code:</h3>
-          <pre>
-            <code>
+          <details>
+            <summary class="red-600-bold">
+              ❯ Dropdown as the code block is too long
+            </summary>
+
+            <pre>
+              <code>
 &lt;div class="main-footer"&gt;
-  &lt;div class="footer-left"&gt;
-    &lt;h4&gt;✦ Created by Angela Nguyen ✦&lt;/h4&gt;
-    &lt;h5&gt;🟄❯ IAT 339 - P03 Portfolio.&lt;/h5&gt;
+  &lt;!-- cat accent section --&gt;
+  &lt;div
+    id="accent-section"
+    class="purple-850-bg content-section footer-section flex-column gap-8"
+  &gt;
+    &lt;p class="h3-visual-styling text-center"&gt;⊹⁺ =/ᐠ • ㅅ •マ= Ⳋ ⁺⊹&lt;/p&gt;
+    &lt;p class="barcode text-center"&gt;i like cats&lt;/p&gt;
   &lt;/div&gt;
 
-  &lt;div class="footer-right flex-row"&gt;
-    &lt;a
-      class="base-button star-mark"
-      href="https://github.com/angela-t-n/iat339-portfolio"
-      target="_blank"
-      &gt;GitHub Repo&lt;/a
-    &gt;
-    &lt;a
-      class="base-button star-mark"
-      href="style-guide.html"
-      target="_blank"
-      &gt;Style Guide&lt;/a
-    &gt;
+  &lt;!-- footer buttons --&gt;
+  &lt;div class="footer-wrapper"&gt;
+    &lt;div class="footer-left"&gt;
+      &lt;p class="h4-visual-styling"&gt;✦ Created by Angela Nguyen ✦&lt;/p&gt;
+      &lt;p class="h5-visual-styling"&gt;🟄❯ IAT 339 - P03 Portfolio.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="footer-right flex-row"&gt;
+      &lt;a
+        class="base-button star-mark"
+        href="https://github.com/angela-t-n/iat339-portfolio"
+        target="_blank"
+        &gt;GitHub Repo&lt;/a
+      &gt;
+      &lt;a
+        class="base-button star-mark"
+        href="style-guide.html"
+        target="_blank"
+        &gt;Style Guide&lt;/a
+      &gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-            </code>
-          </pre>
+
+              </code>
+            </pre>
+          </details>
         </div>
       </section>
 
@@ -916,12 +991,12 @@
 
         <div class="showcase-section">
           <h3>× CSS selector:</h3>
-          <p>hero</p>
+          <p>.hero, .deco-border-bottom</p>
 
           <h3>Sample code:</h3>
           <pre>
             <code>
-&lt;div class="hero"&gt;
+&lt;div class="hero deco-border-bottom"&gt;
   &lt;h1&gt;Lorem Ipsem&lt;/h1&gt;
 &lt;/div&gt;
             </code>
